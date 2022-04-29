@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    --bg-black: #000000;
+    --bg-dark-grey: #181818;    
+    --bg-grey:#3b3b3b;
+    --bg-ligth-grey: #a0a0a0;
+
+    --fs-s: .7rem;
+    --fs-m: 1rem;
+    --fs-l: 1.3rem;    
+
+    --fw-s: 400;
+    --fw-m: ;
+    --fw-l: 700;
+    ;
+
+    --ff-mono: 'PT Mono', monospace;
+    --ff-sans: 'PT Sans', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-mono);
+}
+
+.flex{ 
+    display: flex;
+}
+.app{
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+     
+}
+
+
+.addcard{
+    
+}
+
+.home{
+    padding: 1rem;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+      
+    
+}
+
+
+
+.cardstack{
+    flex-direction: column;
+    
+    
+}
+
+.cardform{
+   
+   
+
+}
+
+
+
+
+.active{
+    
+    padding: .5rem;
+    border-radius: .3rem;    
+    flex-direction: column;    
+    margin-top: 1rem;
+    width: 20rem;
+    height: 12rem;
+    background-color: rgb(218, 218, 218);
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.322)
+}
+
+/* .inactive{
+    padding: .5rem;
+    z-index: 1;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 14rem;
+    height: 9rem;
+    background-color: rgb(165, 40, 40);
+    box-shadow: 2px 2px 2px rgb(150, 150, 150);
+} */
+
+.card{
+
+}
+
+.top{
+    flex: 2;
+
+}
+
+.chip{
+    flex:1;
+    
+}
+.vendor{
+    flex: 1;
+    
+}
+.handledelete{    
+    flex: 0;
+    
+}
+
+.cardnumber{
+    justify-content: center;
+    font-size: var(--fs-l);
+    flex: 1;
+}
+.holder{
+    flex: 1;
+    
+    
+}
+
+.thru{  
+
+}
+
+.low-top{
+    font-size: var(--fs-s);
+    
+    flex: 1;
+}
+.low-bot{
+    flex: 1;
+}
+.cardname{
+    flex: 1;
+}
+
+.low{
+    flex-direction: column;
+    flex: 1;
+
+}
+.link{
+    position: fixed;
+    bottom: 1rem;
+    font-weight: var(--fw-l);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center; 
+    height: 3rem;  
+    width: 17rem;
+    border: .15rem solid black;
+    color: var(--bg-black);
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.322)
+}
+
+.link:hover{
+    position: fixed;
+    bottom: 1rem;
+    font-weight: var(--fw-l);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center; 
+    height: 3rem;  
+    width: 17rem;
+    border: .15rem solid black;
+    color: var(--bg-black);
+    background-color: rgb(124, 219, 179);
+    border-radius: .5rem;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.322)
+}
+
+.link:active{
+    
+    height: 2.8rem;  
+    width: 16.8rem;
+    
+}
+
+.form{
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+        
+    
+}
+
+.form-add{
+    
+    font-weight: var(--fw-l);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;    
+    height: 3rem;  
+    width: 17rem;
+    border: .15rem solid black;
+    color: var(--bg-black);
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.322);
+    
+}
+.form-add:active{
+    
+    transition: 40ms;
+    font-weight: var(--fw-l);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;    
+    height: 2.8rem;  
+    width: 16.8rem;
+    border: .15rem solid black;
+    color: var(--bg-black);
+    background-color: rgb(124, 219, 179);
+    border-radius: .5rem;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.322)
+}
+
+.form-link{
+    
+    font-weight: var(--fw-l);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;  
+    height: 3rem;  
+    width: 17rem;
+    border: .15rem solid black;
+    color: var(--bg-black);
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.322)
+}
+
+.form-btns{
+    gap: .4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1rem;
+
+}
+.form{
+    padding: 1rem;
+}
+
+.form-h1{
+    text-align: center;
+    font-family: var(--ff-sans);
+    font-size:var(--fs-l);
+}
+.form-box{
+    flex-direction: column;
+    margin-top: 1rem;
+    font-size: var(--fs-m);
+    gap: .1rem;
+}
+
+.in-number{
+    padding: .4rem;
+    height: 2.5rem;
+    width: 20rem;
+    border-radius: .2rem;
+    border: 1px solid;
+    
+}
+
+.in-name{
+    padding: .4rem;
+    height: 2.5rem;
+    width: 20rem;
+    border-radius: .2rem;
+    border: 1px solid;
+
+}
+.label-valid-box{
+    justify-content: space-between;
+}
+.valid-box{
+       
+    width: 20rem;
+    justify-content: space-between;
+    height: 2.5rem;
+    
+}
+.in-valid{
+    width: 9rem;
+    border-radius: .2rem;
+    border: 1px solid;
+    padding: .4rem;
+}
+
+.in-ccv{
+    width: 9rem;
+    border-radius: .2rem;
+    border: 1px solid;
+    padding: .4rem;
+}
+
+.in-vendor{
+    width: 20rem;
+    height: 2.5rem;
+}
+.form-label{
+    margin-top: .2rem;
+    font-size: var(--fs-s);
+}
