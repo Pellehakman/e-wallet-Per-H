@@ -13,7 +13,7 @@
     --fw-s: 400;
     --fw-m: ;
     --fw-l: 700;
-    ;
+    
 
     --ff-mono: 'PT Mono', monospace;
     --ff-sans: 'PT Sans', sans-serif;
@@ -34,51 +34,26 @@ body{
 .flex{ 
     display: flex;
 }
-.app{
-    
+.app{    
     width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255);
     display: flex;
-    justify-content: center;
-     
+    justify-content: center;     
 }
-
-
-.addcard{
-    
-}
-
 .home{
     padding: 1rem;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
-      
-    
+    background-color: rgb(255, 255, 255); 
 }
-
-
-
 .cardstack{
-    flex-direction: column;
-    
-    
+    flex-direction: column;    
 }
 
-.cardform{
-   
-   
-
-}
-
-
-
-
-.active{
-    
+.active{    
     padding: .5rem;
     border-radius: .3rem;    
     flex-direction: column;    
@@ -89,37 +64,20 @@ body{
     box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.322)
 }
 
-/* .inactive{
-    padding: .5rem;
-    z-index: 1;
-    flex-direction: column;
-    margin-top: 1rem;
-    width: 14rem;
-    height: 9rem;
-    background-color: rgb(165, 40, 40);
-    box-shadow: 2px 2px 2px rgb(150, 150, 150);
-} */
-
-.card{
-
-}
-
 .top{
     flex: 2;
-
 }
 
 .chip{
-    flex:1;
-    
+    flex:1;    
 }
+
 .vendor{
-    flex: 1;
-    
+    flex: 1;    
 }
-.handledelete{    
-    flex: 0;
-    
+
+.handledelete{   
+    flex: 0;    
 }
 
 .cardnumber{
@@ -127,24 +85,20 @@ body{
     font-size: var(--fs-l);
     flex: 1;
 }
+
 .holder{
-    flex: 1;
-    
-    
-}
-
-.thru{  
-
+    flex: 1;   
 }
 
 .low-top{
-    font-size: var(--fs-s);
-    
+    font-size: var(--fs-s);    
     flex: 1;
 }
+
 .low-bot{
     flex: 1;
 }
+
 .cardname{
     flex: 1;
 }
@@ -152,8 +106,8 @@ body{
 .low{
     flex-direction: column;
     flex: 1;
-
 }
+
 .link{
     position: fixed;
     bottom: 1rem;
@@ -186,24 +140,19 @@ body{
     box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.322)
 }
 
-.link:active{
-    
+.link:active{    
     height: 2.8rem;  
-    width: 16.8rem;
-    
+    width: 16.8rem;    
 }
 
 .form{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
-        
-    
+    height: 100vh;    
 }
 
-.form-add{
-    
+.form-add{    
     font-weight: var(--fw-l);
     text-decoration: none;
     justify-content: center;
@@ -214,11 +163,10 @@ body{
     color: var(--bg-black);
     background-color: rgb(255, 255, 255);
     border-radius: .5rem;
-    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.322);
-    
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.322);    
 }
-.form-add:active{
-    
+
+.form-add:active{    
     transition: 40ms;
     font-weight: var(--fw-l);
     text-decoration: none;
@@ -278,8 +226,7 @@ body{
     height: 2.5rem;
     width: 20rem;
     border-radius: .2rem;
-    border: 1px solid;
-    
+    border: 1px solid;    
 }
 
 .in-name{
@@ -288,18 +235,17 @@ body{
     width: 20rem;
     border-radius: .2rem;
     border: 1px solid;
-
 }
+
 .label-valid-box{
     justify-content: space-between;
 }
-.valid-box{
-       
+.valid-box{       
     width: 20rem;
     justify-content: space-between;
-    height: 2.5rem;
-    
+    height: 2.5rem;    
 }
+
 .in-valid{
     width: 9rem;
     border-radius: .2rem;
