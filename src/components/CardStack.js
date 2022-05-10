@@ -7,7 +7,7 @@ function CardStack (props){
 	const {cards, setActiveCard, activeCard} = props
 
 	const cardItems = cards.map((card, index) => {
-		return <Card cardInfo={card} key={index}
+		return <Card cardData={card} key={index}
 		setActiveCard={setActiveCard} activeCard={activeCard}/>
 	})
 	

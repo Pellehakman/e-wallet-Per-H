@@ -7,11 +7,11 @@ function CardForm(props) {
 
     const {addCard} = props
 
-    const [addNumber, setAddNumber] = useState('')
-    const [addName, setAddName] = useState('')
-    const [addValid, setAddValid] = useState('')
-    const [addCcv, setAddCcv] = useState('')
-    const [addVendor, setAddVendor] = useState('')  
+    const [addNumber, setAddNumber] = useState('XXXX XXXX XXXX XXXX')
+    const [addName, setAddName] = useState('XXXX XXXXXXXXX')
+    const [addValid, setAddValid] = useState('XX/XX')
+    const [addCcv, setAddCcv] = useState('XXX')
+    const [addVendor, setAddVendor] = useState('Bitcoin')  
 
     const navigate = useNavigate()
 
@@ -33,12 +33,7 @@ function CardForm(props) {
         navigate('/')   
     }
 
-   
-    
-
-
-
-
+  
     return(
         <div className="flex form">
             

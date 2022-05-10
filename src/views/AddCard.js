@@ -29,7 +29,7 @@ function AddCard(props) {
 
           <Top />          
 
-          <Card cardInfo={ card } />
+          <Card cardData={ card } />
 
           <CardForm addCard={addCard} setCard={setCard} />
             

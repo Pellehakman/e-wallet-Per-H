@@ -9,11 +9,11 @@ function Home(props) {
 
     const [activeCard, setActiveCard] = useState({
 
-        cardnumber: '1234 1234 1234 1234',
-            cardname: 'John Johnson',   
-            valid: '12/34', 
-            ccv: 'ccv',
-            vendor: 'NINJA'
+        cardnumber: 'XXXX XXXX XXXX XXXX',
+            cardname: 'XXXX XXXXXXXXX',   
+            valid: 'XX/XX', 
+            // ccv: 'ccv',
+            vendor: 'XXXXX'
     })
     
 
@@ -25,7 +25,7 @@ function Home(props) {
             <h1 className='form-h1'>E-WALLET</h1>
 
             <h5 className='h5'>ACTIVE CARD</h5>           
-            <Card cardInfo={activeCard}/>
+            <Card cardData={activeCard}/>
            
 
 
