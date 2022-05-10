@@ -2,27 +2,19 @@ import Card from "./Card";
 
 
 
-const CardStack = ({cards, handleDeleteCard}) => {   
+function CardStack (props){   
+
+	const {cards, setActiveCard, activeCard} = props
+
+	const cardItems = cards.map((card, index) => {
+		return <Card cardInfo={card} key={index}
+		setActiveCard={setActiveCard} activeCard={activeCard}/>
+	})
+	
 
 return(
         <div className='flex cardstack'>
-
-                {cards.map((card) => ( <Card 
-                id={card.id} 
-				cardnumber={card.cardnumber} 
-				cardname={card.cardname}
-				valid={card.valid} 
-				// ccv={card.ccv} 
-				vendor={card.vendor} 
-				handleDeleteCard={handleDeleteCard}					
-				active={card.active}
-                
-                
-                />))}
-                
-            
-            
-
+			{cardItems}       
         </div>
     )
 }

@@ -2,41 +2,36 @@ import { Link } from 'react-router-dom';
 import CardForm from '../components/CardForm';
 import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid'
+import Card from '../components/Card';
+import Top from '../components/Top';
 
 
-function AddCard() {
+function AddCard(props) {
 
-    const [cards, setCards] = useState([])
+  const {addCard} = props
+
+  const [card, setCard] = useState({
+            cardnumber: '1234 1234 1234 1234',
+            cardname: 'John Johnson',   
+            valid: '12/34', 
+            ccv: 'ccv',
+            vendor: 'NINJA'
+
+  })
 
 
-  useEffect(() =>{
-        const savedCards = JSON.parse(
-          localStorage.getItem('CARDS'));
-        if (savedCards){
-          setCards(savedCards)
-        }}, []);
 
-    useEffect(() =>{
-            localStorage.setItem('CARDS', JSON.stringify(cards))
-          }, [cards])
-    
-    const addCard = (cardnumber, cardname, valid, ccv, vendor, active) =>{            
-        const newCard = {
-            id: nanoid(),
-            cardnumber: cardnumber,
-            cardname: cardname,   
-            valid: valid,      
-            ccv: ccv,
-            vendor: vendor,
-            active: active         
-        }
 
-        const newCards = [...cards, newCard];
-        setCards(newCards)}
+
 
     return(
         <div className='flex addcard'>
-            <CardForm handleSubmit={addCard}/>
+
+          <Top />          
+
+          <Card cardInfo={ card } />
+
+          <CardForm addCard={addCard} setCard={setCard} />
             
         </div>
     )}

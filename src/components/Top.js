@@ -7,13 +7,9 @@ function Top({cards}) {
     return(
         <div className='top'>
 
-            {/* {cards.map((card) => (
-				<Card isActive={isActive ? : null}
-                active={card.active}
-                cardnumber={card.cardnumber} 												
-				/>
-			))} */}
-            
+<h1 className='form-h1'>ADD A NEW BANK CARD</h1>
+
+<h5 className="top-h5">NEW CARD</h5>
 
         </div>
     )
